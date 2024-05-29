@@ -116,5 +116,6 @@ nav ul li a:hover {
     padding: 2em;
     box-sizing: border-box;
     margin: 0;
+    font-size: 1vw;
 
 }

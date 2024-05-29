@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Home</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #top {
+            height: 95vh;
+            width: 97vw;
+            position: relative;
+            background: url(../images/assem.jpg) center no-repeat;
+            display: inline-block;
+
+        }
+
+        .background-overlay:before {
+            content: '';
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .top-content {
+            color: #ffffff;
+            display: block;
+            position: relative;
+            height: 20%;
+            margin: auto;
+        }
+
+        .top-content h1 {
+            width: 100%;
+            padding: 0 15px;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin: 0 auto;
+            text-transform: uppercase;
+        }
+
+        .top-content p {
+            padding: 0 15px;
+            margin: 30px auto 0;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .top-content .top-job {
+            font-size: 18px;
+        }
+
+        .top-content .top-job span {
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        .top-content .top-job-desc {
+            font-size: 14px;
+            max-width: 700px;
+        }
+
+        .center {
+            padding-top: 25%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- top Section, Background Image change in css -->
+    <div id="top" class="background-overlay">
+
+        <!-- Name & Description -->
+        <div class="top-content center">
+            <h1>I am Assem Ashraf</h1>
+            <p class="top-job"><span>I'M A CREATIVE WEB DEVELOPER</span></p>
+            <p class="top-job-desc">I STAND ON A SWEET SPOT WHERE DESIGN &amp; CODE INTERSECTS. </p>
+
+        </div>
+    </div><!-- /.top -->
+    <!-- End top -->
+
+</body>
+
+</html>

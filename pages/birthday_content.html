@@ -14,7 +14,7 @@
         }
 
         label {
-            font-size: 1.5em;
+            font-size: 2vw;
             color: black;
             margin-bottom: 10px;
             font-weight: bold;
@@ -22,29 +22,40 @@
         }
 
         textarea {
-            width: 50em;
-            height: 15em;
-            margin-bottom: 3em;
+            width: 50vw;
+            height: 30vh;
+            margin-bottom: 3vh;
+            padding: 1em;
+            font-size: 1.5vw;
+            font-family: "./fonts/Poppins-Regular.ttf", sans-serif;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: none;
+
         }
 
         input[type="submit"] {
-            min-width: 10em;
-            min-height: 3em;
+            min-width: 10vw;
+            min-height: 7vh;
             background-color: #fcf7e3;
             color: black;
-            font-size: 15px;
+            font-size: 1.5vw;
             border: none;
             cursor: pointer;
             border-radius: calc(3em / 2);
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
         }
+
+        input[type="submit"]:hover {
+            background-color: #f7f1d3;
+        }
     </style>
 </head>
 
 <body>
-    <form action="thank_you.html" method="post">
+    <form action="thank_you.html" method="get">
 
-        <label for="message">Message:</label>
+        <label for="message">Message</label>
         <textarea id="message" name="message" required></textarea>
         <br>
         <input type="submit" value="Send Message">
